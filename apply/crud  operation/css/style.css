@@ -1,0 +1,35 @@
+body {
+  font-family: "Exo", sans-serif;
+  margin: 0;
+}
+
+.des_h {
+  min-height: 100px !important;
+  max-height: 200px !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 10px var(--bs-border-color);
+  border-color: var(--bs-border-color);
+
+}
+
+.card{
+  background-color: #101214;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-height: auto;
+
+  img{
+    padding: 20px;
+    min-height: 250px ;
+    max-height: 250px ;
+  };
+}
+
+.card:hover {
+  transform: translateX(5px) translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}

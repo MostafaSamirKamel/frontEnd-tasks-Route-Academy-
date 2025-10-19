@@ -1,0 +1,77 @@
+/* Dark mode styles */
+    :root:has(.mode:checked) body {
+        background-color: #202020;
+        color: #f1f1f1;
+    }
+
+    :root:has(.mode:checked) .mode-group .dark {
+        display: none;
+    }   
+
+    :root:has(.mode:checked) .mode-group .light {
+        display: block;
+    }
+
+    :root:has(.mode:checked) nav {
+        background-color: #2a2a2a;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    :root:has(.mode:checked) .home {
+        background-color: #252525;
+    }
+
+    :root:has(.mode:checked) .chefs {
+        background-color: #2a2a2a;
+    }
+
+    :root:has(.mode:checked) .gallery {
+        background-color: #252525;
+    }
+
+    :root:has(.mode:checked) .contact {
+        background-color: #2a2a2a;
+    }
+
+    :root:has(.mode:checked) .chefs-cards .card {
+        background-color: #333;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    :root:has(.mode:checked) .chefs-cards .card-content h3 {
+        color: #f1f1f1;
+    }
+
+    :root:has(.mode:checked) .contact .details > div {
+        background-color: #333;
+    }
+
+    :root:has(.mode:checked) .contact .details > div h3 {
+        color: #ddd;
+    }
+
+    :root:has(.mode:checked) .contact form {
+        background-color: #333;
+    }
+
+    :root:has(.mode:checked) .contact form :is(input, textarea) {
+        background-color: #2a2a2a;
+        border-color: #444;
+        color: #f1f1f1;
+    }
+
+    :root:has(.mode:checked) footer {
+        background-color: #1a1a1a;
+    }
+
+    body:has(.mode:checked) nav .nav-links a:hover {
+        color: #fff;
+    }
+
+    body:not(body:has(:target)):has(.mode:checked) li a[href="#home"],
+    body:has(.home:target):has(.mode:checked) li a[href="#home"],
+    body:has(.contact:target):has(.mode:checked) li a[href="#contact"],
+    body:has(.gallery:target):has(.mode:checked) li a[href="#gallery"],
+    body:has(.chefs:target):has(.mode:checked) li a[href="#chefs"] {
+    color: #fff;
+}

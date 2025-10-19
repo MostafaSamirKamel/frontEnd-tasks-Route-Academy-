@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+  line-height: 1.6;
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  height: 35px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s;
+  padding: 4px 6px;
+}
+
+nav ul li a:hover {
+  color: #c59d5f;
+}
+
+/* ----------------  Section one  -----------------*/
+.section-one {
+  height: 100vh;
+  background: url("../images/drew-coffman-1872.jpg") no-repeat center center/cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 200px;
+}
+
+.section-one h1 {
+  font-size: 3.5rem;
+  margin: 15px 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.section-one p {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+}
+
+/* Buttons */
+.section-one button {
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-one button:first-of-type {
+  background-color: #d4a373;
+  color: white;
+}
+
+.section-one button:first-of-type:hover {
+  background-color: #b48457;
+}
+
+.section-one button:last-of-type {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: white;
+}
+
+.section-one button:last-of-type:hover {
+  background-color: white;
+  color: #b48457;
+}
+
+.section-one button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* ------------------- Section two  -------------------------  */
+.section-two {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  padding: 60px 40px;
+}
+
+.section-two-image {
+  float: left;
+  width: 45%;
+  text-align: center;
+}
+
+.section-two-image img {
+  max-width: 100%;
+}
+
+.section-two-content {
+  float: right;
+  width: 45%;
+}
+
+.section-two-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.section-two-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  margin: 10px 0;
+}
+
+.features-list i {
+  margin-right: 10px;
+  color: #b48457;
+}
+
+
+/* ------------------- Section three ------------------------- */
+.section-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  gap: 100px;
+  height: 600px;
+}
+
+.section-three h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-three p {
+  max-width: 600px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.section-three img {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* -----------------------section four --------------------*/
+.title {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #777;
+}
+
+.cards-container {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px;
+  max-width: 400px;
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* -------------------  section five  -------------------------  */
+.section-five {
+  background-color: #f9f9f9;
+  padding: 60px 40px;
+  overflow: hidden;
+}
+
+.section-five-image {
+  float: left;
+  width: 45%;
+}
+
+.section-five-image img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-five-content {
+  float: right;
+  width: 45%;
+}
+
+.section-five-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-five-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.section-five-content h5 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.section-five-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-five-content ul li {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #555;
+}
+
+.section-five-content ul li i {
+  margin-right: 12px;
+  font-size: 15px;
+  color: #b48457;
+}
+
+/* -------------------  Footer  ------------------- */
+footer {
+  background-color: #403d38;
+  color: #969696;
+  padding: 60px 0 0;
+  font-family: 'Alegreya', serif;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+}
+
+.footer-column:last-child {
+  margin-right: 0;
+}
+
+.footer-column h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 15px;
+}
+
+.footer-column ul li a {
+  color: #969696;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.footer-column ul li i {
+  margin-right: 10px;
+  color: #8e7754;
+}
+
+.footer-bottom {
+  clear: both;
+  background-color: #353330;
+  padding: 40px 0 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-bottom img {
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.footer-bottom p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #969696;
+}
+
+.social-icons a {
+  color: #8c8a86;
+  background-color: #484540;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  background-color: #8e7754;
+}

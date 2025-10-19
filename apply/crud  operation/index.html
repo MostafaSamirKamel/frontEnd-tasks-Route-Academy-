@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="eng/mostafasamir" />
+    <title>Random Quote Generator</title>
+    <link rel="icon" type="image/png" href="./img/5265761-200.png" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap & css style -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center h3">Product Mangement System</h1>
+
+      <form>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            id="name"
+            placeholder="name"
+            class="form-control"
+          />
+          <label for="name">Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            id="category"
+            placeholder="category"
+            class="form-control"
+            list="categories"
+          />
+          <datalist id="categories">
+            <option>mobile</option>
+            <option>laptop</option>
+            <option>watch</option>
+            <option>memory</option>
+            <option>hard disk</option>
+            <option>flash</option>
+            <option>screen</option>
+            <option>cover</option>
+          </datalist>
+
+          <label for="category">Category</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            id="price"
+            placeholder="price"
+            class="form-control"
+          />
+          <label for="price">Price</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <textarea
+            type="text"
+            id="description"
+            placeholder="description"
+            class="form-control des_h"
+          >
+          </textarea>
+          <label for="description">Description</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="file" id="file" placeholder="file" class="" />
+        </div>
+
+        <button class="btn btn-outline-light">Add Product</button>
+      </form>
+    </div>
+
+    <section class="py-5 my-2">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <img src="./img/1.jpg" alt="1" class="w-100  object-fit-contain" />
+
+              <div class="product-info p-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 class="h5">laptop lenovo x3</h3>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="6">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>laptop</span>
+                  </h4>
+                  <span class="h6">100$</span>
+                </div>
+
+                <p class="text-body-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellendus recusandae praesentium qui vitae, nulla natus
+                  quidem dolorum, in necessitatibus ipsam culpa. Nisi, libero.
+                  Labore facere perferendis maxime sit dolore aliquam!
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-warning w-100">Update</button>
+                  <button class="btn btn-outline-danger w-100">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <img src="./img/1.jpg" alt="1" class="w-100  object-fit-contain" />
+
+              <div class="product-info p-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 class="h5">laptop lenovo x3</h3>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="6">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>laptop</span>
+                  </h4>
+                  <span class="h6">100$</span>
+                </div>
+
+                <p class="text-body-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellendus recusandae praesentium qui vitae, nulla natus
+                  quidem dolorum, in necessitatibus ipsam culpa. Nisi, libero.
+                  Labore facere perferendis maxime sit dolore aliquam!
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-warning w-100">Update</button>
+                  <button class="btn btn-outline-danger w-100">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card">
+              <img src="./img/1.jpg" alt="1" class="w-100  object-fit-contain" />
+
+              <div class="product-info p-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 class="h5">laptop lenovo x3</h3>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="6">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>laptop</span>
+                  </h4>
+                  <span class="h6">100$</span>
+                </div>
+
+                <p class="text-body-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellendus recusandae praesentium qui vitae, nulla natus
+                  quidem dolorum, in necessitatibus ipsam culpa. Nisi, libero.
+                  Labore facere perferendis maxime sit dolore aliquam!
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-warning w-100">Update</button>
+                  <button class="btn btn-outline-danger w-100">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card ">
+              <img src="./img/1.jpg" alt="1" class="w-100  object-fit-contain" />
+
+              <div class="product-info p-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h3 class="h5">laptop lenovo x3</h3>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="6">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>laptop</span>
+                  </h4>
+                  <span class="h6">100$</span>
+                </div>
+
+                <p class="text-body-secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellendus recusandae praesentium qui vitae, nulla natus
+                  quidem dolorum, in necessitatibus ipsam culpa. Nisi, libero.
+                  Labore facere perferendis maxime sit dolore aliquam!
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-warning w-100">Update</button>
+                  <button class="btn btn-outline-danger w-100">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- js file -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
