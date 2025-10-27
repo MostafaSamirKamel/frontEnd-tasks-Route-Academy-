@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&family=PT+Sans:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./img/bookmark.png" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <section class="main">
+      <h1 class="title">Bookmark</h1>
+
+      <div class="content-wrapper">
+        <div class="bookmarkInfo">
+          <h2>
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+
+          <form>
+            <div class="bookmarkName my-3 text-start">
+              <label for="bookmarkName">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name
+              </label>
+              <input
+                type="text"
+                id="bookmarkName"
+                placeholder="Bookmark Name"
+                class="form-control"
+              />
+            </div>
+
+            <div class="bookmarkURL my-3 text-start">
+              <label for="bookmarkURL">
+                <i class="fa-solid fa-link pe-2"></i>Site URL
+              </label>
+              <input
+                type="url"
+                id="bookmarkURL"
+                placeholder="Bookmark URL"
+                class="form-control"
+              />
+            </div>
+
+            <div class="buttonSubmit">
+              <button
+                type="button"
+                class="btn btn-outline-dark submitBtn"
+                id="submitBtn"
+                onclick="addMarks()"
+              >
+                Add Bookmark
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="bookmarkTable">
+          <table class="table mt-4 text-center">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tableContent">
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
